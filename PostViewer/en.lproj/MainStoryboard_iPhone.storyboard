@@ -54,8 +54,8 @@
                                                             </view>
                                                             <constraints>
                                                                 <constraint firstItem="Vc8-ZH-qdB" firstAttribute="trailing" secondItem="jhL-Sm-ozE" secondAttribute="trailing" type="default" id="L2X-tZ-xgy"/>
+                                                                <constraint firstItem="Vc8-ZH-qdB" firstAttribute="top" secondItem="jhL-Sm-ozE" secondAttribute="top" constant="-3" id="YEA-KZ-8Xe"/>
                                                                 <constraint firstItem="Vc8-ZH-qdB" firstAttribute="leading" secondItem="jhL-Sm-ozE" secondAttribute="leading" type="default" id="aWa-c7-Sa1"/>
-                                                                <constraint firstItem="Vc8-ZH-qdB" firstAttribute="top" secondItem="jhL-Sm-ozE" secondAttribute="top" type="default" id="rqj-uZ-ZJI"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="labelTag" destination="Vc8-ZH-qdB" id="uhM-aF-xeW"/>
