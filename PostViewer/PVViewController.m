@@ -1,4 +1,3 @@
-#import <CoreGraphics/CoreGraphics.h>
 #import "PVViewController.h"
 #import "PVPost.h"
 #import "PVTableViewCell.h"
@@ -17,15 +16,12 @@
     [super viewDidLoad];
     posts = [[NSMutableArray alloc] init];
 
-    NSMutableArray *tags = [[NSMutableArray alloc] init];
-    [tags addObject:@"tag1"];
-
     for (int i = 0; i < 5; i++) {
         NSMutableArray *tags = [[NSMutableArray alloc] init];
-        [tags addObject: @"the first label"];
-        [tags addObject: @"the second label"];
-        [tags addObject: @"the third label"];
-        [tags addObject: @"the forth label"];
+        for (int j = 0; j < 5; j++) {
+            [tags addObject: [NSString stringWithFormat: @"Post %d, tag %d", i + 1, j + 1]];
+        }
+
         PVPost *post = [[PVPost alloc] initWithTitle: [NSString stringWithFormat:@"title%d", i + 1] text: @"text1" andTags: tags];
         [posts addObject: post];
     }
