@@ -1,23 +1,145 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="PVViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="145" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mnc-wI-GS3">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="PVTableViewCell" selectionStyle="blue" indentationWidth="10" reuseIdentifier="PVTableViewCell" rowHeight="145" id="ZCh-q6-UAF" customClass="PVTableViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="145"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5Gb-eD-zYl">
+                                                    <color key="backgroundColor" red="0.78130702549999997" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="lL8-5t-l2x"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SJ7-bk-P4W">
+                                                        <size key="itemSize" width="34" height="50"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CellTag" reuseIdentifier="CellTag" id="jhL-Sm-ozE" customClass="PVCollectionViewCell">
+                                                            <rect key="frame" x="0.0" y="0.0" width="34" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                                <rect key="frame" x="0.0" y="0.0" width="34" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vc8-ZH-qdB">
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="ef0-20-3V2"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstItem="Vc8-ZH-qdB" firstAttribute="trailing" secondItem="jhL-Sm-ozE" secondAttribute="trailing" type="default" id="L2X-tZ-xgy"/>
+                                                                <constraint firstItem="Vc8-ZH-qdB" firstAttribute="leading" secondItem="jhL-Sm-ozE" secondAttribute="leading" type="default" id="aWa-c7-Sa1"/>
+                                                                <constraint firstItem="Vc8-ZH-qdB" firstAttribute="top" secondItem="jhL-Sm-ozE" secondAttribute="top" type="default" id="rqj-uZ-ZJI"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="labelTag" destination="Vc8-ZH-qdB" id="uhM-aF-xeW"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP8-8P-fBk">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="5Gb-eD-zYl" firstAttribute="trailing" secondItem="ZCh-q6-UAF" secondAttribute="trailing" type="default" id="J89-gg-FR8"/>
+                                            <constraint firstItem="EP8-8P-fBk" firstAttribute="trailing" secondItem="ZCh-q6-UAF" secondAttribute="trailing" type="default" id="MKf-2e-cE5"/>
+                                            <constraint firstItem="EP8-8P-fBk" firstAttribute="top" secondItem="ZCh-q6-UAF" secondAttribute="top" constant="5" id="OGI-Dn-Bzd"/>
+                                            <constraint firstItem="5Gb-eD-zYl" firstAttribute="leading" secondItem="ZCh-q6-UAF" secondAttribute="leading" type="default" id="Zkh-te-rde"/>
+                                            <constraint firstItem="EP8-8P-fBk" firstAttribute="leading" secondItem="ZCh-q6-UAF" secondAttribute="leading" type="default" id="i7F-lH-qdM"/>
+                                            <constraint firstItem="5Gb-eD-zYl" firstAttribute="top" secondItem="ZCh-q6-UAF" secondAttribute="top" constant="47" id="jse-NK-nPY"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="tagsCollection" destination="5Gb-eD-zYl" id="Ux2-kl-RQj"/>
+                                            <outlet property="title" destination="EP8-8P-fBk" id="6Wt-Vl-W6L"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="jmF-u4-lJo"/>
+                                    <outlet property="delegate" destination="2" id="uEU-Ii-cPV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mnc-wI-GS3" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Ud0-Ml-ncE"/>
+                            <constraint firstItem="mnc-wI-GS3" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="V3T-U3-rFB"/>
+                            <constraint firstItem="mnc-wI-GS3" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="aBq-xk-nMF"/>
+                            <constraint firstItem="mnc-wI-GS3" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="b12-qJ-pCW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="mnc-wI-GS3" id="1hh-i4-SPd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PVCollectionViewCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PVCollectionViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="labelTag" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PVTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PVTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tagsCollection" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PVViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PVViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

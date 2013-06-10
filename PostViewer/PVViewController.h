@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PVViewController : UIViewController
+@interface PVViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end

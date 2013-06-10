@@ -19,6 +19,9 @@
 		2C9852EF1765167C00047F2E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9852ED1765167C00047F2E /* MainStoryboard_iPhone.storyboard */; };
 		2C9852F21765167C00047F2E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9852F01765167C00047F2E /* MainStoryboard_iPad.storyboard */; };
 		2C9852F51765167C00047F2E /* PVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9852F41765167C00047F2E /* PVViewController.m */; };
+		2C9852FD176516A600047F2E /* PVPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9852FC176516A600047F2E /* PVPost.m */; };
+		2C9853001765B0E300047F2E /* PVTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9852FF1765B0E300047F2E /* PVTableViewCell.m */; };
+		2C9853031765B4CE00047F2E /* PVCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9853021765B4CE00047F2E /* PVCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,12 @@
 		2C9852F11765167C00047F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		2C9852F31765167C00047F2E /* PVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVViewController.h; sourceTree = "<group>"; };
 		2C9852F41765167C00047F2E /* PVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVViewController.m; sourceTree = "<group>"; };
+		2C9852FB176516A600047F2E /* PVPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPost.h; sourceTree = "<group>"; };
+		2C9852FC176516A600047F2E /* PVPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVPost.m; sourceTree = "<group>"; };
+		2C9852FE1765B0E300047F2E /* PVTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVTableViewCell.h; sourceTree = "<group>"; };
+		2C9852FF1765B0E300047F2E /* PVTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVTableViewCell.m; sourceTree = "<group>"; };
+		2C9853011765B4CE00047F2E /* PVCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVCollectionViewCell.h; sourceTree = "<group>"; };
+		2C9853021765B4CE00047F2E /* PVCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +101,12 @@
 				2C9852F31765167C00047F2E /* PVViewController.h */,
 				2C9852F41765167C00047F2E /* PVViewController.m */,
 				2C9852DC1765167C00047F2E /* Supporting Files */,
+				2C9852FB176516A600047F2E /* PVPost.h */,
+				2C9852FC176516A600047F2E /* PVPost.m */,
+				2C9852FE1765B0E300047F2E /* PVTableViewCell.h */,
+				2C9852FF1765B0E300047F2E /* PVTableViewCell.m */,
+				2C9853011765B4CE00047F2E /* PVCollectionViewCell.h */,
+				2C9853021765B4CE00047F2E /* PVCollectionViewCell.m */,
 			);
 			path = PostViewer;
 			sourceTree = "<group>";
@@ -181,6 +196,9 @@
 				2C9852E21765167C00047F2E /* main.m in Sources */,
 				2C9852E61765167C00047F2E /* PVAppDelegate.m in Sources */,
 				2C9852F51765167C00047F2E /* PVViewController.m in Sources */,
+				2C9852FD176516A600047F2E /* PVPost.m in Sources */,
+				2C9853001765B0E300047F2E /* PVTableViewCell.m in Sources */,
+				2C9853031765B4CE00047F2E /* PVCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
